@@ -1,11 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+    background-color: var(--backgroud-color);
+    color: var(--primary-text-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .link {
-text-decoration: none
-
+text-decoration: none;
+color: var(--black-color);
 }
 
 .link:hover,
@@ -19,15 +22,25 @@ text-decoration: none
 
 
 :root {
-    --primary-text-color: rgba(33, 33, 33, 1);
-    --title-text-color: rgba(117, 117, 117, 1);
-    --accent-color: rgba(33, 150, 243, 1);
-    --backgroud-color: rgba(255, 255, 255, 1);
-    --background-color-footer: rgba(47, 48, 58, 1);
+    --primary-text-color: #212121; 
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --backgroud-color: #FFFFFF;
+    --background-color-footer: #2F303A;;
     --backround-color-section: #F5F5F5;
-    --background-color-team: rgba(245, 244, 250, 1);
-
+    --background-color-team: #F5F4FA;;
+--black-color: #000000
 }
+
+
+
+
+
+/* background: #EEEEEE;
+background: #000000;
+background: #FFFFFF99;
+background: #2F303A;
+background: #ECECEC; */
 
 
 .logo-link {
@@ -36,12 +49,16 @@ text-decoration: none
         font-weight: 700;
         font-size: 26px;
         line-height: calc( 31 / 26);
+        color: var(--black-color);
         /* identical to box height */
-    
         letter-spacing: 0.03em;
 }
 
 /* Header */
+
+.header {
+    background-color: var(--backgroud-color);
+}
 
 .web-logo {
     color: var(--accent-color)
@@ -54,6 +71,7 @@ text-decoration: none
         font-size: 14px;
         line-height: calc( 16 / 14);
         letter-spacing: 0.02em;
+        color: var(--black-color);
 }
 
 
@@ -88,6 +106,10 @@ text-decoration: none
         }
 
 /* ГОЛОВНИЙ СЛАЙД */
+.main {
+    background-color: var(--backround-color-section);
+}
+
 .main-section {
     background-color: var(--background-color-footer);
 }
@@ -96,7 +118,6 @@ text-decoration: none
 font-weight: 900;
 font-size: 44px;
 line-height: calc(60 / 44);
-
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -114,6 +135,7 @@ font-weight: 700;
     background-color: var(--accent-color);
     color: var(--backgroud-color);
     cursor:pointer;
+    font-family: inherit;
 }
 
 /* OCОБЛИВОСТІ */
@@ -121,24 +143,30 @@ font-weight: 700;
     background-color: var(--backround-color-section);
 } */
 
-.advantages-title {
-    opacity: 0%;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .advantages-list-title {
 font-weight: 700;
-    font-size: 14px;
     line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
 .advantages-list-text {
     font-weight: 400;
-        font-size: 14px;
         line-height: calc(24 / 14);
-     letter-spacing: 0.03em;
      color: var(--title-text-color)
 }
 
@@ -149,9 +177,8 @@ font-weight: 700;
 .work-title {
     font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: calc( 42 / 36 );
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--primary-text-color);
 }
 
@@ -170,21 +197,22 @@ font-weight: 700;
 }
 
 .team-text {
-    font-weight: 400;
         font-size: 16px;
         line-height: calc(19 / 16);
         /* identical to box height */
     
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--title-text-color);
-        background-color: var(--backgroud-color)
 }
 
 /* FOOTER */
 
 .footer {
     background-color: var(--background-color-footer);
+}
+
+.adress {
+    font-style: normal;
 }
 
 .footer-adress {
@@ -210,8 +238,8 @@ font-weight: 700;
 /* PORTFOLIO */
 
 /* MAIN */
-.info-title {
-    opacity: 0%;
+.section-info {
+    background-color: var(--backround-color-section);
 }
 
 
@@ -225,6 +253,7 @@ font-weight: 700;
         color: var(--primary-text-color);
         background-color: var(--background-color-team);
         cursor: pointer;
+        font-family: inherit;
 }
 
 .info-button:hover,
@@ -239,9 +268,6 @@ font-weight: 700;
 }
 
 /* EXAMPLES */
-.examples-title {
-    opacity: 0%;
-}
 
 .section-examples {
     background-color: var(--backgroud-color);
@@ -258,12 +284,9 @@ font-weight: 700;
 }
 
 .examples-text {
-    font-weight: 400;
         font-size: 16px;
         line-height: calc(30 / 16);
         /* identical to box height, or 188% */
-    
-        letter-spacing: 0.03em;
         color: var(--title-text-color);
 }
 
