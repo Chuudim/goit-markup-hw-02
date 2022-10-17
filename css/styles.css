@@ -106,9 +106,6 @@ background: #ECECEC; */
         }
 
 /* ГОЛОВНИЙ СЛАЙД */
-.main {
-    background-color: var(--backround-color-section);
-}
 
 .main-section {
     background-color: var(--background-color-footer);
@@ -121,7 +118,7 @@ line-height: calc(60 / 44);
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: var(--backgroud-color)
+color: var(--background-color)
 }
 
 .main-section .btn {
@@ -133,7 +130,7 @@ font-weight: 700;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
-    color: var(--backgroud-color);
+    color: var(--background-color);
     cursor:pointer;
     font-family: inherit;
 }
@@ -162,10 +159,10 @@ font-weight: 700;
     line-height: calc(16 / 14);
     text-transform: uppercase;
     color: var(--primary-text-color);
+    font-size: 14px;
 }
 
 .advantages-list-text {
-    font-weight: 400;
         line-height: calc(24 / 14);
      color: var(--title-text-color)
 }
@@ -188,12 +185,11 @@ font-weight: 700;
 }
 
 .team-title {
-    font-weight: 500;
-        font-size: 16px;
-        line-height: calc(19 / 16);
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--primary-text-color);
+font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    color: var(--primary-text-color);
 }
 
 .team-text {
@@ -209,6 +205,17 @@ font-weight: 700;
 
 .footer {
     background-color: var(--background-color-footer);
+}
+
+.logo-link-footer {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31 / 26);
+        color: var(--background-color);
+        /* identical to box height */
+        letter-spacing: 0.03em;
 }
 
 .adress {
@@ -238,9 +245,7 @@ font-weight: 700;
 /* PORTFOLIO */
 
 /* MAIN */
-.section-info {
-    background-color: var(--backround-color-section);
-}
+
 
 
 .info-button {
@@ -258,12 +263,12 @@ font-weight: 700;
 
 .info-button:hover,
 .info-button:focus {
-    color: var(--backgroud-color);
+    color: var(--background-color);
     background-color: var(--accent-color);
 }
 
 .info-list .info-button.current {
-    color: var(--backgroud-color);
+    color: var(--background-color);
         background-color: var(--accent-color)
 }
 
